@@ -1,4 +1,4 @@
-import  Letter from "../Letter.js";
+// import  Letter from "../Letters.js";
 
 export default class Word {
     constructor(word){
@@ -10,20 +10,26 @@ export default class Word {
         this.printWord = this.printWord();
     } 
   
-    letterMiss(){
-        // forEach(elem, param){
-        if (letter.every(function(input){
-                letter[0] === input;
-            } else if {
-                //if not will display underscore
-                return "_";
-            } else {
-                return validLetter/Word.push(currentLetter/word);
-            }
-            forEach(elem,param)/.every();
-        //then set the letter araay as a letter.push(word);
-    });
-});
+ letterMiss(input)
+ {
+     letter.every(function(input){
+    letter[0] === input;
+    })
+ }
+    // letterMiss(){
+    //     // forEach(elem, param){
+    //     if (letter.every(function(input){
+    //             letter[0] === input;
+    //         })) else if {
+    //             //if not will display underscore
+    //             return "_";
+    //         } else {
+    //             return validLetter/Word.push(currentLetter/word);
+    //         }
+    //         forEach(elem,param)/.every();
+    //     //then set the letter araay as a letter.push(word);
+    // });
+// });
     printWord(){
         var that = this;
         //split method will split a string obj to array of strings
@@ -40,3 +46,8 @@ export default class Word {
 };
 
 //};
+// Correct word ['t','e','s','t']
+// track which letter they're guessing for
+// compare the input (single char) to word Array(corresponding index)
+// if correct letter - output that letter on the screen
+//     else - output __ on the screen
