@@ -8,6 +8,7 @@ export default class Word {
         this.totalLetters = this.word.length;
         this.letterMiss = this.letterMiss();
         this.printWord = this.printWord();
+        this.correctWord = this.correctWord();
     } 
   
  letterMiss(input)
@@ -31,10 +32,10 @@ export default class Word {
     // });
 // });
     printWord(){
-        var that = this;
+        let that = this;
         //split method will split a string obj to array of strings
-        var word = this.word.split("");
-        var output = "";
+        let word = this.word.split("");
+        let output = "";
         //execute a provided function once for each an array element
         word.forEach(function(letter, index) {
             //show the letters in the index and display space
@@ -42,7 +43,8 @@ export default class Word {
         });
         console.log(output + "\n");
     };
-
+    
+    // correctWord() {}
 };
 
 //};

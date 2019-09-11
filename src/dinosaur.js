@@ -1,5 +1,5 @@
-export class Species {
-    getSpeciesByKingdom(getDinos) {
+export class Dinosaurs {
+    getDinosaurs(getDinos) {
       return new Promise(function(resolve, reject) {
         let request = new XMLHttpRequest();
         const url = `http://dinoipsum.herokuapp.com/api/?format=html&words=10&paragraphs=3`;
