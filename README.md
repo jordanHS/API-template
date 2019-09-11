@@ -1,6 +1,6 @@
-# endangered-species-api
+# dinosaur-hangman-api
 
-#### _Hired to build a endangered-species-api app
+#### _Hired to build a dinosaur-hangman-api app
 
 #### _Project authored by Jordan Safford and Vera Weikel_
 
@@ -19,7 +19,7 @@ _A project to call API and extract information_
 
 ### App should:
 
-- Spec: Accept user inputted text
+- Spec: User enters a 
 Input: "text"
 Output: "text"
 - Spec: The program displays inputted text
@@ -44,7 +44,7 @@ Output: "input a"| "input b"
 
 ## Setup/Installation Requirements
 <pre>
-1. [**Github:**The Places Visited**](https://github.com/jordanhs/endangered-species-api.git)
+1. [**Github:**The Places Visited**](https://github.com/jordanHS/dinosaur-hangman-api.git)
 2. Open the command line--and navigate into the repository.
 3. On your browser, open the desired file, and enjoy!
 </pre>
