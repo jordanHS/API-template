@@ -1,4 +1,4 @@
-import { Dinosaur } from './../js/dinosaur.js';
+//import { Dinosaur } from './../js/dinosaur.js';
 
 $(document).ready(function() {
     $('#dinosaurLocation').click(function() {
@@ -7,7 +7,8 @@ $(document).ready(function() {
 // UI Logic end  
 
 //business logic begin
-      let promise = // code noved to _weather-service.js_
+      //let promise = 
+      // code moved to _weather-service.js_
 
 // business logic end  
   let dinosaurName = $("#dinosaur_name").show();

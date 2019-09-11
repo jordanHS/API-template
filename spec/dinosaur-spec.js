@@ -1,9 +1,9 @@
-import { Species } from '../src/species';
+//import { Species } from '../src/species';
 
-describe('hello', function() {
-  it('should return hello', function() {
-    var message = hello();
-    expect(message).toEqual("Hello");
+describe('word', function() {
+  it('should return word', function() {
+    var message = word();
+    expect(message).toEqual("word");
   });
 });
 

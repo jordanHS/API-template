@@ -6,13 +6,22 @@
   </head>
   <body>
     <div class="container">
-      <h1>Get Dinosaur Globally!</h1>
-      <!-- <label for="location">Enter a location:</label>
-      <input id="location" type="text"> -->
-      <button class="btn-success" id="dinosaurLocation">Get</button>
-      <div class="errors"></div>
-      <div class="dinosaur_name"></div>
-      <div class="showHangman"></div>
+      <h1>Get Dinosaur Hangman!</h1>
+      <h3>This is your game!<span class = "arrayWinConcatProgress"></span></h3> <!--JS: progress-->
+      <form>
+          <div class="form-group">
+              <label for="userTurns">Guess: </label>
+              <input id="guess" name="guess" type="text" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-info">Guess!</button>
+        </form>
+   <p class="userMisses">missed chars.</p> <!--misses-->
+   
+   <h2>game outcome</h2> <!--IF STMT then matching arrays win-->
+   <div>
+        <p>game results:</p>
+        <h2><span class="userGameResult"></span></h2>      
+      </div>
     </div>
   </body>
 </html>
