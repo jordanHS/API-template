@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/misakimichy/tdd-starter.git"
+    "url": "git+https://github.com/jordanHS/dinosaur-hangman-api.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/misakimichy/tdd-starter/issues"
+    "url": "https://github.com/jordanHS/dinosaur-hangman-api.git/issues"
   },
-  "homepage": "https://github.com/misakimichy/tdd-starter#readme",
+  "homepage": "https://github.com/jordanHS/dinosaur-hangman-api.git/#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.3",

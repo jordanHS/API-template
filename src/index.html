@@ -2,9 +2,8 @@
 <html>
   <head>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="styles.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
     <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="main.js"></script>
     <title>dinosaur HANGMAN</title>
@@ -20,12 +19,17 @@
           </div>
           <button type="submit" class="btn btn-info">Guess!</button>
         </form>
-   <p class="userMisses">missed chars.</p> <!--misses-->
-   
-   <h2>game outcome</h2> <!--IF STMT then matching arrays win-->
+   <p class="user-misses">missed chars.</p> <!--misses-->
+  
    <div>
-        <p>game results:</p>
-        <h2><span class="userGameResult"></span></h2>      
+    <p id="display">game outcome: </p> <!--IF STMT then matching arrays win-->
+      <p>game details:</p>
+        <h2><span class="userGameResult"></span></h2>    
+            <ul>
+              <li class="showDinosaurName"></li>
+              <li class="showUserMisses"></li>
+              <li class="showDinosaurLetter"></li>
+            </ul>
       </div>
     </div>
   </body>

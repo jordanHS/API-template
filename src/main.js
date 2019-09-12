@@ -1,22 +1,27 @@
-//import { Dinosaur } from './../js/dinosaur.js';
+//import Game from './../dinosaur.js';
+//import Letters from './../Letters.js';
+//import Word from './../Word.js';
 
 $(document).ready(function() {
-    $('#dinosaurLocation').click(function() {
-      const dinosaurLocation = $('#location').val();
-      $('#location').val("");
+    $('#dinoLetter').click(function() {
+      const dinoLetter = $('#letter').val();
+      $('#letter').val("");
 // UI Logic end  
 
-//business logic begin
-      //let promise = 
-      // code moved to _weather-service.js_
-
+/*TODO*:
+- functionality to hide/show the userGameResult section until the comparison function runs to completion.
+*/
 // business logic end  
   let dinosaurName = $("#dinosaur_name").show();
+  let showDinosaurLetter = $(".showDinosaurLetter").show();   
+/// figure out which is the first display, second; before/after calc completesß
+  $('.showDinosaurLetter').text(`The dinosaur name is ${dinosaur_letter}%`); //check the request.body data 
+  $('.showUserMisses').text(`The userMisses - ${user_misses} is ${body.main.dinosaur_name}%`);//check the request.body data
 //UI logic begin
       promise.then(function(response) {
         let body = JSON.parse(response);
-        $('.showDinosaur').text(`The dinosaur name is ${dinosaur_name}%`);
-        // $('.showHumidity').text(`The humidity in ${city} is ${body.main.humidity}%`);
+        $('.showDinosaurName').text(`The dinosaur name is ${dinosaur_name}%`); //check the request.body data 
+     
         
         // $('.showTemp').text(`The temperature in Kelvins is ${body.main.temp} degrees.`);
       }, function(error) {
@@ -25,19 +30,3 @@ $(document).ready(function() {
     });
   });
 
-
-  /*–
-  {"count":10000,"page":"0","result":
-      [{
-        "taxonid":3,
-        "kingdom_name":"ANIMALIA",
-        "phylum_name":"MOLLUSCA",
-        "class_name":"GASTROPODA",
-        "order_name":"STYLOMMATOPHORA",
-        "family_name":"ENDODONTIDAE",
-        "genus_name":"Aaadonta",
-        "scientific_name":"Aaadonta angaurana",
-        "infra_rank":null,
-        "infra_name":null,
-        "population":null,
-        "category":"CR"}*/
