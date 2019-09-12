@@ -1,7 +1,6 @@
 import Game from "./Game.js";
-import Word from "Word.js";
-import Letter from "./Letter.js";
-import "main.js";
+import Word from "./Word";
+import "./main.js";
 
 export default class Letter {
     constructor(letter){

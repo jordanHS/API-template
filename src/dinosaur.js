@@ -9,22 +9,22 @@ export class Dinosaurs {
         request.onload = function() {
           if (this.status === 200) {
             resolve(request.response);
-          //  let that = this;
-          //split method will split a string obj to array of strings
-          // let word = this.word.split("");
-          // let output = "";
-          //   word.forEach(function(letter, index) {
-          //     //show the response separated by display space
-          //     (output += that.letters[index]), display();
-          // });
+           let that = this;
+         // split method will split a string obj to array of strings
+          let word = this.word.split("");
+          let output = "";
+            word.forEach(function(letter, index) {
+              //show the response separated by display space
+              (output += that.letters[index]), display();
+          });
           // console.log(output + "\n");
           } else {
             reject(Error(request.statusText));
           }
         }
         request.open("GET", url);//, true);
-        // request.setRequestHeader("x-rapidapi-host", "alexnormand-dino-ipsum.p.rapidapi.com");
-        // request.setRequestHeader("x-rapidapi-key", "process.env.API_KEY");
+        request.setRequestHeader("x-rapidapi-host", "alexnormand-dino-ipsum.p.rapidapi.com");
+        request.setRequestHeader("x-rapidapi-key", "process.env.API_KEY");
         request.send(data);
       });
     }

@@ -1,6 +1,10 @@
 //import Game from './../dinosaur.js';
 //import Letters from './../Letters.js';
 //import Word from './../Word.js';
+import $ from 'jquery';
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles.css';
 
 $(document).ready(function() {
     $('#dinoLetter').click(function() {
