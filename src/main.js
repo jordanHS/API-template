@@ -17,16 +17,25 @@ $(document).ready(function() {
 /// figure out which is the first display, second; before/after calc completesß
   $('.showDinosaurLetter').text(`The dinosaur name is ${dinosaur_letter}%`); //check the request.body data 
   $('.showUserMisses').text(`The userMisses - ${user_misses} is ${body.main.dinosaur_name}%`);//check the request.body data
+  $('.showDinosaurName').text(`The dinosaur name is ${dinosaur_name}%`); //check the request.body data 
 //UI logic begin
-      promise.then(function(response) {
-        let body = JSON.parse(response);
-        $('.showDinosaurName').text(`The dinosaur name is ${dinosaur_name}%`); //check the request.body data 
-     
-        
-        // $('.showTemp').text(`The temperature in Kelvins is ${body.main.temp} degrees.`);
-      }, function(error) {
-        $('.showErrors').text(`There was an error processing your request: ${error.message}`);
-      });
-    });
-  });
+    // promise.then((response) => JSON.parse(response) {
+    //     resolve(response);
+    // }).then(function(data){
+    //     console.table(data);
+    //   // $('.showTemp').text(`The temperature in Kelvins is ${body.main.temp} degrees.`);
+    //   }).then(function(error) {
+    //     $('.showErrors').text(`There was an error processing your request: ${error.message}`);
+    //   });
+    // });
 
+ 
+  }); 
+
+  // function createNode(element) {
+  //   return document.createElement(element); // Create the type of element you pass in the parameters
+  // }
+
+  // function append(parent, el) {
+  //   return parent.appendChild(el); // Append the second parameter(element) to the first one
+});

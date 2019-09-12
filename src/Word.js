@@ -1,4 +1,5 @@
-// import  Letter from "../Letters.js";
+//import  Letter from "./Letters.js";
+//import Game from "./Game.js";
 
 export default class Word {
     constructor(word){
@@ -17,20 +18,7 @@ export default class Word {
     letter[0] === input;
     })
  }
-    // letterMiss(){
-    //     // forEach(elem, param){
-    //     if (letter.every(function(input){
-    //             letter[0] === input;
-    //         })) else if {
-    //             //if not will display underscore
-    //             return "_";
-    //         } else {
-    //             return validLetter/Word.push(currentLetter/word);
-    //         }
-    //         forEach(elem,param)/.every();
-    //     //then set the letter araay as a letter.push(word);
-    // });
-// });
+ 
     printWord(){
         let that = this;
         //split method will split a string obj to array of strings
@@ -44,7 +32,17 @@ export default class Word {
         console.log(output + "\n");
     };
     
-    // correctWord() {}
+    // correctWord() {
+         /* forEach(elem, param){ //DBL CHK param names.
+            for( let i = 0; i<letters.length; i++){
+                if (this.letters.every(input)){
+                        letters[0] === input;
+                        Game.finalWordPushedArray.push(this.letter));
+                    }
+                }
+            }
+        }*/                
+    
 };
 
 //};

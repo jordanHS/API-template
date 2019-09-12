@@ -9,6 +9,15 @@ export class Dinosaurs {
         request.onload = function() {
           if (this.status === 200) {
             resolve(request.response);
+          //  let that = this;
+          //split method will split a string obj to array of strings
+          // let word = this.word.split("");
+          // let output = "";
+          //   word.forEach(function(letter, index) {
+          //     //show the response separated by display space
+          //     (output += that.letters[index]), display();
+          // });
+          // console.log(output + "\n");
           } else {
             reject(Error(request.statusText));
           }
@@ -21,5 +30,38 @@ export class Dinosaurs {
     }
 }
 
+
+
+/* Authors
+  function createNode(element) {
+      return document.createElement(element);
+  }
+
+  function append(parent, el) {
+    return parent.appendChild(el);
+  }
+
+  const ul = document.getElementById('authors');
+  const url = 'https://randomuser.me/api/?results=10';
+  fetch(url)
+  .then((resp) => resp.json())
+  .then(function(data) {
+    let authors = data.results;
+    return authors.map(function(author) {
+      let li = createNode('li'),
+          img = createNode('img'),
+          span = createNode('span');
+      img.src = author.picture.medium;
+      span.innerHTML = `${author.name.first} ${author.name.last}`;
+      append(li, img);
+      append(li, span);
+      append(ul, li);
+    })
+  })
+  .catch(function(error) {
+    console.log(JSON.stringify(error));
+  });   
+
+*/
 
 

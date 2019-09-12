@@ -1,4 +1,6 @@
-// import Word from '../src/theWord';
+// import Game from '../src/Game';
+// import Word from '../src/Word';
+// import Letters from '../src/Letters';
 
 // describe('Word', function() {
  
